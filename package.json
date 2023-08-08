@@ -1,0 +1,55 @@
+{
+  "name": "utilities-functions",
+  "version": "1.0.9",
+  "description": "javascript utils functions and methods with type safty",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appsaeed/utilities-functions.git"
+  },
+  "keywords": [
+    "js",
+    "utils"
+  ],
+  "author": "appsaeed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appsaeed/utilities-functions.git/issues"
+  },
+  "homepage": "https://github.com/appsaeed/utilities-functions.git#readme",
+  "files": [
+    "clipboard",
+    "convert",
+    "cookies",
+    "datetime",
+    "detection",
+    "exportion",
+    "fs",
+    "generate",
+    "generate",
+    "storage",
+    "str",
+    "types",
+    "url",
+    "validation"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "default": "./index.js",
+      "require": "./index.js"
+    },
+    "./*": {
+      "types": "./*/index.d.ts",
+      "import": "./*/index.js",
+      "default": "./*/index.js",
+      "require": "./*/index.js"
+    },
+    "./package.json": "./package.json"
+  }
+}
