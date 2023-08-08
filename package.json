@@ -1,11 +1,11 @@
 {
   "name": "utilities-functions",
-  "version": "1.0.9",
-  "description": "javascript utils functions and methods with type safty",
+  "version": "1.0.3",
+  "description": "javascript utilities functions functions and methods for borwser and nodejs to 10x faster developer experience",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
-    "test": "test"
+    "test": "tsc"
   },
   "repository": {
     "type": "git",
@@ -51,5 +51,8 @@
       "require": "./*/index.js"
     },
     "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "utilities-functions": "^1.0.2"
   }
 }

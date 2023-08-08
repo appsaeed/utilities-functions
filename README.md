@@ -76,7 +76,7 @@ toClipboard("hello world");
 ```js
 import { formatPrice } from "appmon/convert";
 
-//formate the prite fimiler like stripe
+//formate the prite for payment gateway : stipe or anything else
 formatPrice(20.3);
 ```
 
@@ -85,7 +85,7 @@ formatPrice(20.3);
 ```js
 import { currencyToSymbol } from "appmon/convert";
 
-//formate the prite fimiler like stripe
+//Currency to symbol
 currencyToSymbol("USD");
 //output: $
 ```
@@ -108,14 +108,15 @@ errorToString("any errors like: object or string");
 //I will return only string
 ```
 
+[Our online rgb to hex tool](https://appsaeed.github.io/ftools/rgb-to-hex)
 **rgbToHex | hexToRgb**
 
 ```js
 import { rgbToHex } from "appmon/convert";
 import { hexToRgb } from "appmon/convert";
 
-rgbToHex(30, 20, 60);
-//I will return hex string
+rgbToHex(10, 20, 100);
+//I will return hex string: #0a1464
 
 hexToRgb("#1a098b");
 /*
@@ -313,7 +314,7 @@ isPhoneNumber("10986499204"); // true
 
 ## Typescript
 
-## types (pre-defined types for typescript)[]
+## types (pre-defined types for typescript)
 
 RangeOf(strint number and end numbe)
 
@@ -347,4 +348,5 @@ setThemeStore(theme);
 ## License
 
 Copyright © 2023 appsaeed
-Released under the MIT license.
+
+[MIT](LICENSE.txt)
