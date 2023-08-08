@@ -1,7 +1,7 @@
 {
   "name": "utilities-functions",
-  "version": "1.0.3",
-  "description": "javascript utilities functions functions and methods for borwser and nodejs to 10x faster developer experience",
+  "version": "1.0.13",
+  "description": "Javascript utilities functions and methods for browser and nodejs to 10x faster developer experience",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
@@ -12,8 +12,13 @@
     "url": "https://github.com/appsaeed/utilities-functions.git"
   },
   "keywords": [
-    "js",
-    "utils"
+    "utilities-functions",
+    "javascript utilities",
+    "javascript",
+    "utilities",
+    "utils",
+    "utility",
+    "appmon"
   ],
   "author": "appsaeed",
   "license": "MIT",
@@ -51,8 +56,5 @@
       "require": "./*/index.js"
     },
     "./package.json": "./package.json"
-  },
-  "dependencies": {
-    "utilities-functions": "^1.0.2"
   }
 }

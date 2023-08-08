@@ -21,6 +21,3 @@ node_modules
 *.sw?
 
 
-#files
-**/index.js
-

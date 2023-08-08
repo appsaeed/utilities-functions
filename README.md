@@ -1,6 +1,6 @@
-## Overview
+## intro
 
-Javascript utilities functions and methods uses for better developer experience
+Javascript utilities functions and methods for browser and nodejs to 10x faster developer experience
 
 > Fast, generic JavaScript browser and some nodejs utility functions.
 
@@ -12,7 +12,7 @@ Install with [npm](https://www.npmjs.com/)
 npm i utilities-functions
 ```
 
-## Project
+## Overview
 
 <!-- START -->
 
@@ -353,4 +353,4 @@ setThemeStore(theme);
 
 Copyright © 2023 appsaeed
 
-[MIT](LICENSE.txt)
+[MIT](LICENSE)
