@@ -26,4 +26,6 @@ dist-ssr
 
 
 #files
-/**/index.ts
+**/index.ts
+
+

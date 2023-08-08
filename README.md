@@ -40,7 +40,7 @@ npm i utilities-functions
 **copyImageToClipboard**
 
 ```js
-import { copyImageToClipboard } from "appmon/clipboard";
+import { copyImageToClipboard } from "utilities-functions/clipboard";
 
 //copy image to clipboard
 const imageUrl = "path/to/image";
@@ -52,7 +52,7 @@ copyImageToClipboard(imageUrl);
 **imageToBlob**
 
 ```js
-import { imageToBlob } from "appmon/clipboard";
+import { imageToBlob } from "utilities-functions/clipboard";
 
 const imageUrl = "path/to/image";
 
@@ -63,7 +63,7 @@ imageToBlob(imageUrl);
 **toClipboard or copyToClipboard**
 
 ```js
-import { toClipboard } from "appmon/clipboard";
+import { toClipboard } from "utilities-functions/clipboard";
 
 //copy text to clipboard
 toClipboard("hello world");
@@ -74,7 +74,7 @@ toClipboard("hello world");
 **formatPrice**
 
 ```js
-import { formatPrice } from "appmon/convert";
+import { formatPrice } from "utilities-functions/convert";
 
 //formate the prite for payment gateway : stipe or anything else
 formatPrice(20.3);
@@ -83,7 +83,7 @@ formatPrice(20.3);
 **currencyToSymbol**
 
 ```js
-import { currencyToSymbol } from "appmon/convert";
+import { currencyToSymbol } from "utilities-functions/convert";
 
 //Currency to symbol
 currencyToSymbol("USD");
@@ -93,7 +93,7 @@ currencyToSymbol("USD");
 **objectToStr**
 
 ```js
-import { objectToStr } from "appmon/convert";
+import { objectToStr } from "utilities-functions/convert";
 
 objectToStr({ a: "hello", b: " world" });
 // will return string { a: "hello", b: " world" }
@@ -102,7 +102,7 @@ objectToStr({ a: "hello", b: " world" });
 **errorToString**
 
 ```js
-import { errorToString } from "appmon/convert";
+import { errorToString } from "utilities-functions/convert";
 
 errorToString("any errors like: object or string");
 //I will return only string
@@ -112,8 +112,8 @@ errorToString("any errors like: object or string");
 **rgbToHex | hexToRgb**
 
 ```js
-import { rgbToHex } from "appmon/convert";
-import { hexToRgb } from "appmon/convert";
+import { rgbToHex } from "utilities-functions/convert";
+import { hexToRgb } from "utilities-functions/convert";
 
 rgbToHex(10, 20, 100);
 //I will return hex string: #0a1464
@@ -130,7 +130,7 @@ hexToRgb("#1a098b");
 **setCookie**
 
 ```js
-import { setCookie } from "appmon/cookies";
+import { setCookie } from "utilities-functions/cookies";
 
 const cookieName = "cookie-name";
 const cookieValue = "value";
@@ -143,8 +143,8 @@ setCookie(cookieName, cookieValue, cookieDays);
 **getCookie | hasCookie**
 
 ```js
-import { getCookie } from "appmon/cookies";
-import { hasCookie } from "appmon/cookies";
+import { getCookie } from "utilities-functions/cookies";
+import { hasCookie } from "utilities-functions/cookies";
 
 const cookieName = "cookie-name";
 
@@ -156,8 +156,8 @@ hasCookie(cookieName); // reurn true or false;
 ## datetime
 
 ```js
-import { dbTodate } from "appmon/datetime";
-import { dbTotime } from "appmon/datetime";
+import { dbTodate } from "utilities-functions/datetime";
+import { dbTotime } from "utilities-functions/datetime";
 
 dbTodate("2023-03-28 20:04:10");
 // output: Mar 28, 23
@@ -169,8 +169,8 @@ dbTotime("2023-03-28 20:04:10");
 ## detection
 
 ```js
-import { isDark } from "appmon/detection";
-import { deviceTheme } from "appmon/detection";
+import { isDark } from "utilities-functions/detection";
+import { deviceTheme } from "utilities-functions/detection";
 
 isDark(); // will return true or false
 
@@ -180,8 +180,8 @@ deviceTheme(); // will return dark or light
 ## exportion
 
 ```js
-import { exportTopdf } from "appmon/exportion";
-import { exportToDocs } from "appmon/exportion";
+import { exportTopdf } from "utilities-functions/exportion";
+import { exportToDocs } from "utilities-functions/exportion";
 
 exportTopdf("filename", "dat content", options); //options is optional
 
@@ -191,10 +191,10 @@ exportToDocs("filename", "dat content");
 ## generate
 
 ```js
-import { uuid } from "appmon/generate";
-import { uuidv1 } from "appmon/generate";
-import { uuidv4 } from "appmon/generate";
-import { avatar } from "appmon/generate";
+import { uuid } from "utilities-functions/generate";
+import { uuidv1 } from "utilities-functions/generate";
+import { uuidv4 } from "utilities-functions/generate";
+import { avatar } from "utilities-functions/generate";
 
 uuid(); //will return string unique uuid
 
@@ -210,7 +210,11 @@ avatar("name"); //will return avatar url by first latter
 **Session storage**
 
 ```js
-import { getSession, setSession, removeSession } from "appmon/storage";
+import {
+  getSession,
+  setSession,
+  removeSession,
+} from "utilities-functions/storage";
 
 setSession("sessionName", "session data  with any data type");
 
@@ -224,7 +228,7 @@ removeSession("sessionName");
 **localStorage**
 
 ```js
-import { setLocalStorage } from "appmon/storage";
+import { setLocalStorage } from "utilities-functions/storage";
 
 setLocalStorage("storageName", "session data  with any data type");
 
@@ -235,8 +239,8 @@ getLocalStorage("sessionName");
 **themeStorage**
 
 ```js
-import { setThemeStore } from "appmon/storage";
-import { getThemeStore } from "appmon/storage";
+import { setThemeStore } from "utilities-functions/storage";
+import { getThemeStore } from "utilities-functions/storage";
 
 setThemeStore("dark");
 
@@ -246,7 +250,7 @@ getThemeStore(); // output: dark
 ## str
 
 ```js
-import { capitalize, firstUpper } from "appmon/str";
+import { capitalize, firstUpper } from "utilities-functions/str";
 
 capitalize("hello world"); // output: Hello world
 
@@ -258,7 +262,7 @@ firstUpper("hello world"); // output: Hello world
 **toSeoUrl**
 
 ```js
-import { toSeoUrl } from "appmon/url";
+import { toSeoUrl } from "utilities-functions/url";
 
 toSeoUrl("Hello: I am javascript");
 //output: hello-i-am-javascript
@@ -267,7 +271,7 @@ toSeoUrl("Hello: I am javascript");
 **seoToString**
 
 ```js
-import { seoToString } from "appmon/url";
+import { seoToString } from "utilities-functions/url";
 
 seoToString("hello-iam-javascript");
 //output: hello i am javascript
@@ -276,7 +280,7 @@ seoToString("hello-iam-javascript");
 **urlToString**
 
 ```js
-import { urlToString } from "appmon/url";
+import { urlToString } from "utilities-functions/url";
 
 urlToString("hello-iam-javascript");
 //output: hello i am javascript
@@ -285,7 +289,7 @@ urlToString("hello-iam-javascript");
 **adslash**
 
 ```js
-import { adslash } from "appmon/url";
+import { adslash } from "utilities-functions/url";
 
 adslash("hello-iam-javascript");
 //output: hello i am javascript
@@ -294,7 +298,7 @@ adslash("hello-iam-javascript");
 **unslash**
 
 ```js
-import { unslash } from "appmon/url";
+import { unslash } from "utilities-functions/url";
 
 unslash("hello-iam-javascript");
 //output: hello i am javascript
@@ -303,7 +307,7 @@ unslash("hello-iam-javascript");
 ## validation
 
 ```js
-import { isMail, isPhoneNumber } from "appmon/validation";
+import { isMail, isPhoneNumber } from "utilities-functions/validation";
 
 isMail("yourmail@domain.com"); // true or false
 
@@ -319,7 +323,7 @@ isPhoneNumber("10986499204"); // true
 RangeOf(strint number and end numbe)
 
 ```ts
-import { FileExtensions, FileOpenInfo } from "appmon/types/files";
+import { FileExtensions, FileOpenInfo } from "utilities-functions/types/files";
 
 export type FileOpenInfo = {
   name: string;
@@ -330,8 +334,8 @@ export type FileOpenInfo = {
 ```
 
 ```ts
-import { ThemeType } from "appmon/types/themes";
-import { setThemeStore } from "appmon/storage";
+import { ThemeType } from "utilities-functions/types/themes";
+import { setThemeStore } from "utilities-functions/storage";
 
 const theme: ThemeType = "light";
 
