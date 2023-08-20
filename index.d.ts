@@ -6,8 +6,8 @@ export * as detection from "./detection";
 export * as exportion from "./exportion";
 export * as fs from "./fs";
 export * as generate from "./generate";
+export * as load from "./load";
 export * as storage from "./storage";
 export * as str from "./str";
 export * as url from "./url";
 export * as validation from "./validation";
-

@@ -1,6 +1,6 @@
 {
   "name": "utilities-functions",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Javascript utilities functions and methods for browser and nodejs to 10x faster developer experience",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -35,7 +35,7 @@
     "exportion",
     "fs",
     "generate",
-    "generate",
+    "load",
     "storage",
     "str",
     "types",

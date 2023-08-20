@@ -26,11 +26,11 @@ export function currencyToSymbol(currency: string, language: string): string {
 /**
  * make a string from object
  */
-export function objectToStr(message: any): string {
+export function objectToString(message: any): string {
   if (typeof message === "object") {
-    return message.toString();
+    return JSON.stringify(message);
   } else {
-    return String(message).toString();
+    return String(message);
   }
 }
 
@@ -42,19 +42,23 @@ export function objectToStr(message: any): string {
 export function errorToString(error: any): string {
   if (!error) {
     return "";
+  } else if (typeof error === "string") {
+    return error;
   }
   let message = "";
   try {
     if (typeof error === "string") {
       message = error;
+    } else if (error?.message) {
+      message = objectToString(error?.message);
+    } else if (error?.msg) {
+      message = objectToString(error?.msg);
     } else if (error?.response?.data?.message) {
-      message = error?.response?.data?.message.toString();
+      message = objectToString(error?.response?.data?.message);
     } else if (error?.response?.data) {
       message = error?.response?.data.toString();
     } else if (error?.response) {
       message = error?.response.toString();
-    } else if (error?.message) {
-      message = error?.message.toString();
     } else if (error?.data?.message) {
       message = error?.data?.message.toString();
     } else {
@@ -62,10 +66,10 @@ export function errorToString(error: any): string {
     }
   } catch (_err: unknown) {
     if (_err instanceof Error) {
-      message = _err.message.toString();
+      message = `${_err.name}:${objectToString(_err.message)}`;
     }
   }
-  return objectToStr(message);
+  return objectToString(message);
 }
 
 /**
